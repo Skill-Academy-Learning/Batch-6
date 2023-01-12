@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      :root {
+        --bluec: #5494d4;
+
+        --whitecolor: white;
+
+        --something: pointer;
+      }
+
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans",
+          Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial,
+          sans-serif;
+      }
+      .card {
+        margin: 10px;
+
+        height: 254px;
+        width: 300px;
+
+        padding: 32px 16px;
+
+        border-radius: 8px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.08);
+      }
+
+      .title {
+        font-size: 22px;
+      }
+
+      .text {
+        font-size: 14px;
+
+        margin-top: 20px;
+      }
+
+      .button-container {
+        margin-top: 20px;
+      }
+
+      .button-container button {
+        background-color: var(--whitecolor);
+
+        border: 2px var(--bluec) solid;
+        border-radius: 8px;
+
+        font-size: 14px;
+        font-weight: bold;
+
+        color: var(--bluec);
+
+        padding: 7px;
+
+        cursor: var(--something);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title">View Ashneer's full profile</h1>
+
+      <div class="text">
+        <span><img src="./assets/img/icon.svg" alt="" /></span>&nbsp;See who you
+        know in common
+      </div>
+
+      <div class="text">
+        <i class="fa-sharp fa-solid fa-user"></i>&nbsp;Get introduced
+      </div>
+
+      <div class="text">
+        <i class="fa-sharp fa-solid fa-face-smile"></i>&nbsp;Contact Ashneer
+        directly
+      </div>
+
+      <div class="button-container">
+        <button>Join to view full profile</button>
+      </div>
+    </div>
+  </body>
+</html>

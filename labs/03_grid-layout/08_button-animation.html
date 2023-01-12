@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: silver;
+
+        display: grid;
+        place-items: center;
+      }
+
+      button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      button:hover {
+        animation-name: button-animation;
+        animation-duration: 0.3s;
+
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes button-animation {
+        from {
+          background-color: white;
+          color: black;
+        }
+
+        to {
+          background-color: black;
+          color: white;
+
+          outline: 5px yellow solid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>Some Button</button>
+  </body>
+</html>

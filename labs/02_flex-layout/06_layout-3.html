@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: lightskyblue;
+
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: crimson;
+      opacity: 0.9;
+
+      height: 60px;
+      width: 100%;
+
+      position: fixed;
+      top: 0px;
+    }
+
+    footer {
+      background-color: darkslategray;
+
+      height: 40px;
+    }
+
+    main {
+      background-color: lightcoral;
+
+      min-height: calc(100vh - 40px);
+
+      padding: 76px 16px 16px 16px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    div {
+      background-color: yellow;
+
+      min-height: 150px;
+
+      flex-basis: 200px;
+
+      flex-grow: 1;
+    }
+  </style>
+
+  <!-- Fluid layout example -->
+
+  <body>
+    <header></header>
+
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

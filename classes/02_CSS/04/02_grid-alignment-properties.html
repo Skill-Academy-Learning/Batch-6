@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        background-color: silver;
+        height: 100vh;
+      }
+
+      .grid-container {
+        background-color: yellow;
+        height: 500px;
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        /* Default values for all alignment properties is "stretch" */
+        /* justify-content: stretch;
+        align-content: stretch;
+
+        justify-items: stretch;
+        align-items: stretch; */
+
+        /* Alignment from grid container point of view */
+        justify-content: center; /*  justify means along row*/
+        align-content: center; /*  align means along column*/
+
+        /* Alignment from grid items point of view */
+        justify-items: center; /*  justify means along row*/
+        align-items: center; /*  align means along column*/
+      }
+
+      .grid-item {
+        background-color: aqua;
+        border: 3px red solid;
+      }
+
+      .item1 {
+        min-height: 200px;
+        min-width: 100px;
+      }
+      .item2 {
+        min-height: 150px;
+        min-width: 75px;
+      }
+      .item3 {
+        min-height: 100px;
+        min-width: 50px;
+        background-color: orchid;
+
+        justify-self: center; /*  justify means along row*/
+        align-self: center; /*  align means along column*/
+      }
+      .item4 {
+        min-height: 180px;
+        min-width: 90px;
+      }
+      .item5 {
+        min-height: 160px;
+        min-width: 80px;
+      }
+      .item6 {
+        min-height: 220px;
+        min-width: 110px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1"></div>
+      <div class="grid-item item2"></div>
+      <div class="grid-item item3"></div>
+      <div class="grid-item item4"></div>
+      <div class="grid-item item5"></div>
+      <div class="grid-item item6"></div>
+    </div>
+  </body>
+</html>

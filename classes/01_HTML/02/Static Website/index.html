@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                height: 100vh;
+                width: 100vw;
+                opacity: 100%;
+            }
+            .website-container {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+                gap: 2rem;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CrickInfo</title>
+    </head>
+    <body>
+        <div class="website-container">
+            <img
+                width="100"
+                height="50"
+                src="data:image/png;base64,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"
+            />
+            <h1>CrickInfo</h1>
+            <h2>Team India</h2>
+            <ul>
+                <li>Mahendra Singh Dhoni*</li>
+                <li>Sehwag</li>
+                <li>Virat Kohli</li>
+                <li>Hardik Pandya</li>
+                <li>Rohit Sharma</li>
+                <li>Rahul Dravid</li>
+                <li>Kapil Dev</li>
+                <li>Jadeja</li>
+                <li>Surya Kumar</li>
+                <li>Sachin Tendulkar</li>
+                <li>Sourav Ganguly</li>
+            </ul>
+            <hr width="300" />
+
+            <table border="1">
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Runs</th>
+                    <th>Salary</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Mahendra Singh Dhoni*</td>
+                    <td>41</td>
+                    <td>10555</td>
+                    <td>12 Cr.</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>1055*11</td>
+                    <td>132 Cr.</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" rowspan="2">asd</td>
+                    <td>asdasd</td>
+                </tr>
+                <tr><td>asdad</td></tr>
+            </table>
+
+            <br /><br />
+        </div>
+    </body>
+</html>

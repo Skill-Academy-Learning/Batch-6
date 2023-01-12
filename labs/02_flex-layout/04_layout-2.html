@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .background-image {
+      background-image: url("./static/img/ln-background.svg");
+
+      height: 125px;
+
+      position: relative;
+    }
+
+    .profile-image {
+      background-image: url("./static/img/ashneer.jpg");
+
+      background-size: contain;
+
+      border-radius: 50%;
+
+      outline: 5px white solid;
+
+      height: 76px;
+      width: 76px;
+
+      position: absolute;
+
+      left: 50px;
+      bottom: -38px;
+    }
+
+    header {
+      background-color: aquamarine;
+
+      height: 60px;
+      width: 100%;
+
+      position: fixed;
+      top: 0px;
+    }
+
+    footer {
+      height: 40px;
+
+      background-color: cyan;
+    }
+
+    main {
+      min-height: calc(100vh - 40px);
+
+      /* padding-top: 60px; */
+
+      padding: 90px 150px 16px 150px;
+
+      display: flex;
+
+      gap: 20px;
+    }
+
+    section {
+      background-color: darksalmon;
+
+      min-height: 300px;
+
+      flex-grow: 1;
+    }
+
+    aside {
+      background-color: lightseagreen;
+
+      flex-basis: 200px;
+    }
+  </style>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <div class="background-image">
+          <div class="profile-image"></div>
+        </div>
+      </section>
+      <aside></aside>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

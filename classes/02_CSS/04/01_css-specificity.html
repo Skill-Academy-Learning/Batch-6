@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        background-color: silver;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* 
+      universal selector: 0-0-0
+      type,pseudo-element selector: 0-0-1
+      class, pseudo-class selector: 0-1-0
+      id selector: 1-0-0
+      */
+
+      /*  0-2-1*/
+      input.myclass:focus {
+        outline: 5px red solid;
+      }
+
+      /* 0-2-2 */
+      body input.myclass:focus {
+        outline: 5px yellow solid;
+      }
+
+      /* 1-0-1 */
+      /* input#myid {
+        outline: 5px blue solid;
+      } */
+    </style>
+  </head>
+  <body>
+    <input type="text" class="myclass" id="myid" />
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: lightpink;
+    }
+
+    .background-image {
+      background-image: url("./static/img/ln-background.svg");
+
+      height: 200px;
+
+      position: relative;
+    }
+
+    .profile-image {
+      background-image: url("./static/img/ashneer.jpg");
+
+      background-size: contain;
+
+      border-radius: 50%;
+
+      outline: 5px white solid;
+
+      height: 150px;
+      width: 150px;
+
+      position: absolute;
+
+      left: 50px;
+      top: 125px;
+    }
+  </style>
+
+  <body>
+    <div class="background-image">
+      <div class="profile-image"></div>
+    </div>
+  </body>
+</html>

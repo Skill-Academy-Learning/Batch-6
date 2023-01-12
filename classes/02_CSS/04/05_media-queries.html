@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      h1 {
+        font-size: 32px;
+
+        margin-bottom: 100px;
+      }
+
+      img {
+        height: 300px;
+      }
+
+      body {
+        height: 100vh;
+
+        padding: 5%;
+
+        background-color: silver;
+      }
+
+      @media screen and (min-width: 425px) {
+        body {
+          background-color: red;
+        }
+
+        h1 {
+          font-size: 42px;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        body {
+          background-color: blue;
+        }
+
+        h1 {
+          font-size: 60px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+        body {
+          background-color: green;
+        }
+
+        h1 {
+          font-size: 80px;
+        }
+      }
+
+      @media print {
+        img {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is some header text</h1>
+
+    <img src="./static/img/ashneer.jpg" alt="" />
+  </body>
+</html>
+
+<!-- 
+    RWD -- Responsive web Design
+ -->

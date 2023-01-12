@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        height: 100vh;
+
+        background-color: silver;
+      }
+
+      input {
+        margin: 100px;
+      }
+
+      input:focus {
+        outline: 5px red dashed;
+      }
+
+      .myclass {
+        height: 30px;
+      }
+
+      #myid {
+        border-radius: 15px;
+      }
+
+      [type] {
+        background-color: yellow;
+      }
+
+      [type="text"] {
+        padding: 15px;
+      }
+
+      /* =================================== */
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 24px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: red;
+        margin: 10px;
+      }
+      /* =================================== */
+
+      input.myclass {
+        color: green;
+        font-weight: bold;
+      }
+
+      input#myid {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="myclass" id="myid" type="text" />
+
+    <h1>Header one</h1>
+
+    <h2>Header two</h2>
+
+    <h3>Header three</h3>
+  </body>
+</html>

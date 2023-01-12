@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        margin-top: 100px;
+      }
+
+      div {
+        height: 100px;
+        width: 250px;
+      }
+
+      .one {
+        background-color: red;
+
+        border-radius: 20px;
+
+        position: relative;
+      }
+
+      .two {
+        background-color: blue;
+
+        position: relative;
+
+        top: 20px;
+        left: 20px;
+      }
+
+      .three {
+        background-color: green;
+      }
+
+      .absolute {
+        padding-top: 20px;
+        padding-left: 5px;
+        font-size: 14px;
+
+        height: 60px;
+        width: 60px;
+
+        background-color: yellow;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <div class="absolute">In One</div>
+    </div>
+
+    <div class="two"></div>
+
+    <div class="three"><div class="absolute">In Three</div></div>
+
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut nesciunt
+      deserunt facilis repudiandae officia qui, placeat asperiores nobis saepe,
+      fugiat accusamus id pariatur molestias optio vitae, ea repellendus
+      repellat temporibus! Officiis vel illum, aperiam molestiae labore enim
+      quisquam nostrum officia corrupti possimus eos ipsam reprehenderit rerum?
+      Rem explicabo doloremque atque amet ipsa consectetur quia eum ullam magni!
+      Cumque officiis similique omnis sequi incidunt assumenda molestias
+      consectetur, sapiente asperiores qui odio, necessitatibus adipisci dicta
+      placeat minima aliquam repellendus corrupti harum obcaecati architecto
+      perferendis reiciendis quos iste. Repellendus exercitationem soluta
+      voluptates laboriosam tempore minus accusamus vel eius enim voluptas
+      perspiciatis, quasi quisquam.
+    </div>
+  </body>
+</html>
+
+<!-- 
+    static
+    fixed
+    sticky
+    relative
+    absolute
+ -->

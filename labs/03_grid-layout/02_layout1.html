@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: silver;
+      }
+
+      header {
+        background-color: lightseagreen;
+        height: 60px;
+
+        position: fixed;
+
+        width: 100%;
+      }
+
+      main {
+        background-color: lightgoldenrodyellow;
+        min-height: calc(100vh - 40px);
+
+        padding: 76px 16px 16px 16px;
+
+        display: grid;
+        grid-gap: 20px;
+
+        grid-template-rows: 50px 1fr 50px;
+      }
+
+      @media (min-width: 800px) {
+        main {
+          grid-template-columns: 200px 1fr 200px;
+          grid-template-rows: 1fr;
+        }
+      }
+
+      footer {
+        background-color: lightsteelblue;
+        height: 40px;
+      }
+
+      aside {
+        background-color: lightcoral;
+      }
+
+      section {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <aside>fdfsf</aside>
+
+      <section>sadsadaf</section>
+
+      <aside>fafa</aside>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

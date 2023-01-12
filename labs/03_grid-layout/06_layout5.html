@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: silver;
+      }
+
+      header {
+        background-color: lightseagreen;
+        height: 60px;
+
+        position: fixed;
+
+        width: 100%;
+      }
+
+      footer {
+        background-color: lightsteelblue;
+        height: 40px;
+      }
+
+      .grid-container {
+        background-color: lightgoldenrodyellow;
+        min-height: calc(100vh - 40px);
+
+        padding: 76px 16px 16px 16px;
+
+        display: grid;
+        grid-gap: 20px;
+      }
+
+      div {
+        background-color: cyan;
+        min-height: 100px;
+      }
+
+      .row1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+
+      .row2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+
+      .row3 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <article class="grid-container">
+      <section class="row1">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section class="row2">
+        <div></div>
+        <div></div>
+      </section>
+
+      <section class="row3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>

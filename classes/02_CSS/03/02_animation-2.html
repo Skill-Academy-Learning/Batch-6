@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        height: 100vh;
+        background-color: silver;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      article {
+        width: 400px;
+        height: 400px;
+
+        background-color: lawngreen;
+
+        position: relative;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+
+        background-color: cyan;
+        top: 0px;
+        left: 0px;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        animation-name: my-second-animation;
+        animation-duration: 8s;
+        animation-iteration-count: 1;
+        animation-delay: 5s;
+        animation-direction: normal;
+        animation-play-state: running;
+        animation-timing-function: linear;
+
+        animation-fill-mode: both;
+      }
+
+      @keyframes my-second-animation {
+        0% {
+          background-color: red;
+
+          top: 0px;
+          left: 150px;
+        }
+        25% {
+          background-color: yellow;
+
+          top: 150px;
+          left: 300px;
+        }
+        50% {
+          background-color: green;
+
+          top: 300px;
+          left: 150px;
+        }
+        75% {
+          background-color: magenta;
+
+          top: 150px;
+          left: 0px;
+        }
+        100% {
+          background-color: blue;
+
+          top: 0px;
+          left: 150px;
+        }
+      }
+
+      /*
+      animation-timing-function:
+            - ease: slow-fast-slow
+            - ease-in: slow-fast
+            - ease-out: fast-slow
+            - ease-in-out: fast-slow-fast
+            - cubic-bezier: app jo chahe woh speed 
+      */
+    </style>
+  </head>
+  <body>
+    <article><div></div></article>
+  </body>
+</html>

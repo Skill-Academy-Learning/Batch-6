@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: lightskyblue;
+
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: crimson;
+      opacity: 0.9;
+
+      height: 60px;
+      width: 100%;
+
+      position: fixed;
+      top: 0px;
+    }
+
+    footer {
+      background-color: darkslategray;
+
+      height: 40px;
+    }
+
+    main {
+      background-color: lightcoral;
+
+      min-height: calc(100vh - 40px);
+
+      padding: 76px 16px 16px 16px;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    div {
+      margin-bottom: 20px;
+
+      background-color: lawngreen;
+
+      flex-grow: 1;
+      flex-basis: 200px;
+      min-height: 200px;
+    }
+  </style>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section>
+        <div></div>
+        <div></div>
+      </section>
+
+      <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

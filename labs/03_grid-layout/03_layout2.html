@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+        background-color: silver;
+      }
+
+      header {
+        background-color: lightseagreen;
+        height: 60px;
+
+        position: fixed;
+
+        width: 100%;
+      }
+
+      footer {
+        background-color: lightsteelblue;
+        height: 40px;
+      }
+
+      main {
+        background-color: lightgoldenrodyellow;
+        min-height: calc(100vh - 40px);
+
+        padding: 76px 16px 16px 16px;
+
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+      }
+
+      /* 425px - Device larger than Mobile */
+      @media (min-width: 425px) {
+        main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      /* 768px - Device larger than Tablet */
+      @media (min-width: 768px) {
+        main {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* 1024px - Device larger than S Laptop */
+      @media (min-width: 1024px) {
+        main {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      /* 1440px - Device larger than L Laptop */
+      @media (min-width: 1440px) {
+        main {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      div {
+        background-color: aqua;
+
+        min-height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      .linear {
+        width: 200px;
+        height: 200px;
+
+        margin: 50px auto;
+
+        background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 255, 0.7),
+            rgba(255, 255, 0, 0.7)
+          ),
+          url("./static/img/ashneer.jpg");
+
+        background-size: cover;
+      }
+
+      .radial {
+        width: 200px;
+        height: 200px;
+
+        margin: 50px auto;
+
+        background-image: radial-gradient(
+            rgba(0, 0, 255, 0.7),
+            rgba(255, 255, 0, 0.7)
+          ),
+          url("./static/img/ashneer.jpg");
+
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="linear"></div>
+
+    <div class="radial"></div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        margin-top: 100px;
+      }
+
+      div {
+        height: 100px;
+        width: 250px;
+      }
+
+      .one {
+        background-color: red;
+
+        /* For z-index to work position property value must be something other than 'static' */
+        position: relative;
+
+        z-index: 3;
+      }
+
+      .two {
+        background-color: blue;
+
+        position: relative;
+
+        top: -70px;
+        right: -30px;
+
+        z-index: 2;
+      }
+
+      .three {
+        background-color: green;
+
+        position: relative;
+
+        top: -140px;
+        right: -60px;
+
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+
+    <div class="two"></div>
+
+    <div class="three"></div>
+  </body>
+</html>

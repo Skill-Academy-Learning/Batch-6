@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+  </head>
+
+  <style>
+    body {
+      height: 100vh;
+      background-color: lightskyblue;
+
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background-color: crimson;
+      opacity: 0.9;
+
+      height: 60px;
+      width: 100%;
+
+      position: fixed;
+      top: 0px;
+    }
+
+    footer {
+      background-color: darkslategray;
+
+      height: 40px;
+    }
+
+    main {
+      background-color: lightcoral;
+
+      min-height: calc(100vh - 40px);
+
+      padding: 76px 16px 16px 16px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .column {
+      flex-basis: 200px;
+      flex-grow: 1;
+
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .row {
+      background-color: lightgreen;
+    }
+  </style>
+
+  <!-- Masonary layout example -->
+
+  <body>
+    <header></header>
+
+    <main>
+      <div class="column">
+        <div class="row" style="height: 150px"></div>
+        <div class="row" style="height: 160px"></div>
+        <div class="row" style="height: 250px"></div>
+        <div class="row" style="height: 366px"></div>
+        <div class="row" style="height: 123px"></div>
+        <div class="row" style="height: 267px"></div>
+        <div class="row" style="height: 315px"></div>
+      </div>
+
+      <div class="column">
+        <div class="row" style="height: 250px"></div>
+        <div class="row" style="height: 315px"></div>
+        <div class="row" style="height: 160px"></div>
+        <div class="row" style="height: 123px"></div>
+        <div class="row" style="height: 366px"></div>
+        <div class="row" style="height: 267px"></div>
+        <div class="row" style="height: 150px"></div>
+      </div>
+
+      <div class="column">
+        <div class="row" style="height: 250px"></div>
+        <div class="row" style="height: 260px"></div>
+        <div class="row" style="height: 150px"></div>
+        <div class="row" style="height: 166px"></div>
+        <div class="row" style="height: 223px"></div>
+        <div class="row" style="height: 167px"></div>
+        <div class="row" style="height: 215px"></div>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

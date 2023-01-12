@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .style-button {
+                display: inline-block;
+                outline: 0;
+                cursor: pointer;
+                text-align: center;
+                border: 0;
+                padding: 7px 16px;
+                min-height: 36px;
+                min-width: 36px;
+                color: #ffffff;
+                background: #008060;
+                border-radius: 4px;
+                font-weight: 500;
+                font-size: 14px;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+                    rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
+            }
+            .style-button:hover {
+                background: #006e52;
+            }
+            .style-input {
+                border: 3px solid #000;
+                border-radius: 5px;
+                height: 50px;
+                line-height: normal;
+                color: #282828;
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                user-select: auto;
+                font-size: 16px;
+                padding: 0 6px;
+                padding-left: 12px;
+            }
+            .style-input:focus {
+                border: 3px solid #5551ff;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pizza Delivery</h1>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input
+                class="style-input"
+                type="text"
+                placeholder="Enter your name here"
+                name="firstName"
+                id="firstName"
+                size="40"
+            />
+            <br />
+            <label for="lastName">Last Name:</label>
+            <input
+                class="style-input"
+                type="text"
+                name="lastName"
+                id="lastName"
+            />
+            <br />
+            <hr />
+            <h4>Please choose your toppings</h4>
+            <label>Corns</label>
+            <input type="checkbox" value="corns" name="topping" /> <br />
+            <label>Paneer</label>
+            <input type="checkbox" value="paneer" name="topping" /> <br />
+            <label>Cheese</label>
+            <input type="checkbox" value="cheese" name="topping" /> <br />
+            <label>Onion</label>
+            <input type="checkbox" value="onion" name="topping" /> <br />
+            <hr />
+
+            <label for="payment-method">Payment Method</label>
+            <br />
+            <label>COD</label>
+            <input type="radio" name="payment-method" value="cod" /> <br />
+            <label>UPI</label>
+            <input type="radio" name="payment-method" value="UPI" /> <br />
+            <label>Debit Card</label>
+            <input
+                type="radio"
+                id="debitcardradio"
+                name="payment-method"
+                value="Debit Card"
+            />
+            <hr />
+            <select name="store" id="store">
+                <optgroup label="Delhi">
+                    <option value="paschim-vihar">Paschim Vihar</option>
+                    <option value="ssv">Saraswati Vihar</option>
+                </optgroup>
+                <optgroup label="Mumbai">
+                    <option value="">x</option>
+                    <option value="ssv">y</option>
+                </optgroup>
+            </select>
+            <hr />
+            <textarea name="output" id="output" cols="30" rows="10"></textarea
+            ><br />
+            <input
+                class="style-button"
+                type="button"
+                value="Checkout"
+                ondblclick="display()"
+            />
+            <input
+                class="style-button"
+                type="submit"
+                value="Submit"
+                onclick="display()"
+            />
+            <input class="style-button" type="reset" value="Reset" />
+        </form>
+        <script>
+            function display() {
+                let firstName = document.querySelector("#firstName");
+                let lastName = document.querySelector("#lastName");
+                let textarea = document.querySelector("#output");
+                let storeLocation = document.querySelector("#store");
+                let s =
+                    firstName.value +
+                    " " +
+                    lastName.value +
+                    "\n" +
+                    "Store Location:" +
+                    storeLocation.value;
+                console.log(s);
+                textarea.value = s;
+            }
+        </script>
+    </body>
+</html>

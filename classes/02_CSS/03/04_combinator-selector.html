@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+
+    <!-- <link rel="stylesheet" href="./static/css/reset.css" /> -->
+
+    <style>
+      body {
+        height: 100vh;
+
+        background-color: silver;
+      }
+
+      /* Descendant Combinator --> uses space */
+      /* body p {
+        background-color: yellow;
+      } */
+
+      /* Child Combinator */
+      /* body > p {
+        background-color: yellow;
+      } */
+
+      /* Adjacent Sibling Combinator */
+      h2 + p {
+        background-color: yellow;
+      }
+
+      /* General Sibling Combinator */
+      /* h2 ~ p {
+        background-color: yellow;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Header One</h1>
+    <p>Para One</p>
+    <p>Para Two</p>
+
+    <article>
+      <p>Child Para at the top!</p>
+      <h2>Header Two</h2>
+      <p>Child Para 1</p>
+      <p>Child Para 2</p>
+
+      <ol>
+        <li>List Item One</li>
+        <li>List Item Two</li>
+        <li>List Item Three</li>
+      </ol>
+      <p>Child Para 3</p>
+      <p>Child Para 4</p>
+    </article>
+
+    <p>Para Three</p>
+    <p>Para Four</p>
+  </body>
+</html>
