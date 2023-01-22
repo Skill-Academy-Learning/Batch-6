@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <style>
+      div {
+        background-color: yellowgreen;
+
+        height: 250px;
+        width: 250px;
+      }
+    </style>
+
+    <script>
+      function focus1() {
+        console.log("focus");
+
+        document.getElementById("abcd").style.outline = "2px red solid";
+      }
+
+      function blur1() {
+        console.log("blur");
+
+        document.getElementById("abcd").style.outline = "2px blue solid";
+      }
+
+      function change() {
+        console.log("change");
+      }
+
+      function keydown() {
+        console.log("keydown");
+      }
+
+      function keyup() {
+        console.log("keyup");
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      id="abcd"
+      type="text"
+      onchange="change()"
+      onkeydown="keydown()"
+      onkeyup="keyup()"
+      onfocus="focus1();"
+      onblur="blur1();"
+    />
+  </body>
+</html>

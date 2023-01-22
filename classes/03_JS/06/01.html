@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <script>
+      // event handling
+      // events: click, keydown, mousedown
+      // Functions that run on events are called event handlers or event listners
+
+      function buttonClickHandler() {
+        const textBox = document.getElementById("test");
+
+        console.log(textBox.value);
+      }
+    </script>
+  </head>
+  <body>
+    <div><input type="text" id="test" /></div>
+    <div>
+      <input type="button" value="My Button" onclick="buttonClickHandler();" />
+    </div>
+  </body>
+</html>

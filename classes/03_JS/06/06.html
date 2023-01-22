@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+  </head>
+  <body>
+    <button id="mybutton" onclick="buttonClickHandler()">Counter</button>
+  </body>
+
+  <script>
+    // Closures - a function can remember variables in its scope
+    function siCalculator(rateOfInterest) {
+      return function (principal, timeInYears) {
+        const SI = (principal * rateOfInterest * timeInYears) / 100;
+
+        return SI;
+      };
+    }
+
+    const fivePercentSICalculator = siCalculator(5); // 5%
+    const tenPercentSICalculator = siCalculator(10); // 10%
+
+    console.log(fivePercentSICalculator(10000, 10)); //uses 5%
+    console.log(fivePercentSICalculator(20000, 15)); //uses 5%
+
+    console.log("-------------------");
+
+    console.log(tenPercentSICalculator(10000, 10)); //uses 10%
+    console.log(tenPercentSICalculator(20000, 15)); //uses 10%
+  </script>
+</html>
