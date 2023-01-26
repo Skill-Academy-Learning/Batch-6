@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <script>
+      // Arrow function
+      //normal function declaration
+      function add1(a, b) {
+        return a + b;
+      }
+
+      //normal function expression
+      const add2 = function add2(a, b) {
+        return a + b;
+      };
+
+      // arrow functions cannot be declarations. Only expressions
+      // arrow functions are anonymous
+      // arrow function expression
+      const add3 = (a, b) => a + b;
+
+      console.log(add1(100, 200));
+
+      console.log(add2(100, 200));
+
+      console.log(add3(100, 200));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <style>
+      .form-control {
+        padding: 10px;
+      }
+
+      .form-field-error-message {
+        color: orangered;
+        font-size: 14px;
+
+        padding-top: 3px;
+      }
+    </style>
+
+    <script>
+      function focusHandler() {
+        const textError = document.getElementById("text-field-error");
+
+        textError.innerText = "";
+      }
+
+      function blurHandler(e) {
+        const text = e.target.value;
+
+        if (text.trim() === "") {
+          const textError = document.getElementById("text-field-error");
+
+          textError.innerText = "Required";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <div class="form-control">
+        <input
+          type="text"
+          onfocus="focusHandler()"
+          onblur="blurHandler(event)"
+        />
+        <div class="form-field-error-message" id="text-field-error"></div>
+      </div>
+
+      <div class="form-control">
+        <input type="button" value="Submit Form" />
+      </div>
+    </form>
+  </body>
+</html>

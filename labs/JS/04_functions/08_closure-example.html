@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <script>
+      // Closure example
+
+      // Both increment and decrement functions keep reference (remember) of count variable and step parameter
+
+      function counter(step) {
+        let count = 0;
+
+        const obj = {
+          increment: function increment() {
+            count = count + step;
+
+            console.log(count);
+          },
+          decrement: function decrement() {
+            count = count - step;
+
+            console.log(count);
+          },
+        };
+
+        return obj;
+      }
+
+      const fiveStepCounter = counter(5); // remembers that step is 5
+
+      fiveStepCounter.increment();
+      fiveStepCounter.increment();
+      fiveStepCounter.increment();
+      fiveStepCounter.decrement();
+      fiveStepCounter.decrement();
+      fiveStepCounter.decrement();
+
+      console.log("-----------------------");
+      const tenStepCounter = counter(10);
+
+      tenStepCounter.increment();
+      tenStepCounter.increment();
+      tenStepCounter.decrement();
+    </script>
+  </head>
+  <body></body>
+</html>

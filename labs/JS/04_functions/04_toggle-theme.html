@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <script>
+      let isLightTheme = true;
+
+      // Closure example also
+      function toggleTheme() {
+        console.log("testing");
+        isLightTheme = !isLightTheme;
+
+        document.body.style.color = isLightTheme ? "black" : "white";
+        document.body.style.backgroundColor = isLightTheme ? "white" : "black";
+
+        const button = document.getElementById("theme-button");
+
+        button.innerText = !isLightTheme ? "Light Theme" : "Dark Theme";
+
+        // button.innerText = isLightTheme ? "Dark Theme" : "Light Theme";
+
+        // Logical operator
+        // && -- and
+        // || -- or
+        // ! -- not
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="toggleTheme()" id="theme-button">Dark Theme</button>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis
+      nisi libero vitae explicabo, hic nihil totam unde voluptates praesentium
+      aliquam omnis ullam provident! Fugiat.
+    </p>
+    <p>
+      Ducimus magnam libero error similique, reiciendis, deserunt voluptatibus
+      id sapiente consequatur saepe perferendis! Explicabo non illo minus,
+      laudantium et animi magni nihil sed ab nisi?
+    </p>
+    <p>
+      Earum hic fugiat ratione ad, quaerat voluptates vel cumque nam, dolor
+      explicabo corrupti fuga eaque neque nobis at doloribus accusantium.
+      Ratione cum aperiam saepe ab.
+    </p>
+    <p>
+      Odit, molestias consequatur non maiores voluptas aliquid vero illum
+      tempora earum? Magni impedit voluptas possimus dolores expedita fugiat
+      eveniet quos nesciunt? Quam repellat at ipsum.
+    </p>
+    <p>
+      Ut ipsa accusamus sint rerum totam commodi, aperiam repudiandae, nam,
+      itaque saepe qui ipsam. Eius rem ullam, laudantium vel a incidunt amet
+      fuga totam quisquam?
+    </p>
+    <p>
+      Excepturi velit ipsam nostrum vero ad vitae ut nobis culpa tempora ex
+      exercitationem eius, aspernatur voluptatem, architecto atque, rem illum
+      debitis? Doloribus dignissimos voluptate aliquid!
+    </p>
+    <p>
+      Soluta repellat, ut doloribus laboriosam, illo beatae suscipit natus, ipsa
+      consectetur nisi ad maxime repudiandae adipisci autem expedita veniam
+      maiores asperiores consequatur animi? Voluptatum, voluptates.
+    </p>
+    <p>
+      Vitae saepe, cum animi at mollitia recusandae iure cumque eum repellat
+      distinctio, voluptate accusamus. Deleniti in excepturi ullam soluta
+      voluptatibus dicta dolorem tempore adipisci molestias.
+    </p>
+    <p>
+      Ducimus earum id neque libero doloremque esse voluptatibus iure
+      repellendus non fugiat, consequuntur impedit culpa adipisci excepturi cum
+      itaque ipsa ipsam maiores illum. Dicta, laborum.
+    </p>
+    <p>
+      Aspernatur nam repellat asperiores! Maiores, quas assumenda. Cumque atque
+      esse ipsa nostrum aspernatur nemo laboriosam accusamus! Et debitis
+      expedita dolorem quo impedit qui beatae in.
+    </p>
+  </body>
+</html>
