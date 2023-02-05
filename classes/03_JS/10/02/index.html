@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JS</title>
+
+    <script src="./index.js" defer></script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .grand-parent {
+        width: 350px;
+
+        padding: 10px;
+
+        background-color: yellow;
+
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .parent {
+        width: 150px;
+
+        background-color: cyan;
+
+        padding: 10px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .child {
+        width: 50px;
+        height: 100px;
+
+        background-color: magenta;
+
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent dummy">
+      <div class="parent parent-1">
+        parent-1
+        <div class="child child-1">child-1</div>
+        <div class="child child-2">child-2</div>
+      </div>
+
+      <article class="parent parent-2">
+        parent-2
+        <div class="child child-3">child-3</div>
+        <div class="child child-4">child-4</div>
+      </article>
+    </div>
+  </body>
+</html>
