@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  color: white;
+
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+main {
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+main section {
+  background-color: #222;
+  padding: 15px;
+
+  border-radius: 5px;
+
+  width: 300px;
+  height: 350px;
+}
+
+.title-div {
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  color: orangered;
+
+  text-align: center;
+}
+
+.progressbar-div {
+  margin-bottom: 5px;
+
+  background-color: #333;
+  color: greenyellow;
+
+  border-radius: 5px;
+
+  height: 30px;
+  padding: 5px 15px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.progressbar-div #question-count {
+  text-align: left;
+}
+
+.progressbar-div #score {
+  text-align: right;
+}
+
+.content-div {
+  background-color: #333;
+
+  border-radius: 5px;
+
+  height: 205px;
+  padding: 15px;
+  margin-bottom: 5px;
+
+  display: grid;
+  place-items: center;
+}
+
+.content-div div {
+  width: 100%;
+}
+
+.actions-div {
+  background-color: #333;
+  color: greenyellow;
+
+  border-radius: 5px;
+
+  height: 45px;
+  padding: 5px 15px;
+
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+
+button {
+  background-color: aqua;
+
+  border: none;
+  border-radius: 3px;
+
+  height: 25px;
+  width: 60px;
+
+  color: black;
+  font-weight: bolder;
+}
