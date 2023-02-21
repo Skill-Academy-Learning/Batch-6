@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  border-radius: 30px;
+  padding: 30px;
+
+  background-color: bisque;
+}
+
+.top-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 30px;
+}
+
+.button-div {
+  display: grid;
+
+  align-items: center;
+  justify-content: end;
+}
+
+table {
+  width: 600px;
+}
+
+table,
+th,
+td {
+  border: 1px grey solid;
+
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+th {
+  background-color: sandybrown;
+  font-weight: bold;
+
+  color: black;
+}
+
+i,
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+button {
+  width: 125px;
+  height: 36px;
+
+  margin-right: 20px;
+
+  border-radius: 14px;
+
+  background-color: dodgerblue;
+
+  color: white;
+
+  text-align: center;
+}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.1"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-db": "json-server --watch db.json --port 3004"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
